@@ -8,7 +8,7 @@ const app = express();
 
 mongoose.set("strictQuery", false);
 
-mongoose.connect(process.env.MONGO_PASS).
+mongoose.connect(MONGO_PASS).
     catch(error => handleError(error));
 
 var options = {
